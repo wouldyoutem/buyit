@@ -3,17 +3,11 @@ export interface Product {
   productName: string;
   category: string;
   description: string;
-  price: string;
-  originalPrice?: string;
-  discount?: string;
   image: string;
   coupangLink: string;
   youtubeShorts?: string;
-  youtubeChannel?: string;
   features: string[];
-  rating?: number;
-  reviewCount?: number;
-  seoKeywords?: string;
+  highlight?: string;
   dateAdded?: string;
 }
 
