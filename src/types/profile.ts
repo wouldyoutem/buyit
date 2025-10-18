@@ -12,6 +12,7 @@ export interface Product {
   features: string[];
   rating?: number;
   reviewCount?: number;
+  seoKeywords?: string;
 }
 
 export interface ProductData {
