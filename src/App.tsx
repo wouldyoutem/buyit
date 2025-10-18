@@ -49,13 +49,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* 상단 헤더 - 로고 이미지 적용 */}
+      {/* 상단 헤더 - 프로필/로고 이미지 적용 */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img 
-                src="https://github.com/user-attachments/assets/c62a8663-cb36-4878-a4f3-b2a8d13fedf3" 
+                src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
                 alt="우주꿀템 로고"
                 className="h-10 w-10 object-contain"
               />
@@ -148,7 +148,7 @@ function App() {
         </div>
       </section>
 
-      {/* 특별 프로모션 배너 - 프로필/로고 이미지 적용 */}
+      {/* 특별 프로모션 배너 - 로고 이미지 적용 */}
       <section className="bg-gradient-to-r from-purple-100 to-pink-100 border-y border-purple-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
@@ -178,7 +178,7 @@ function App() {
               </div>
               <div className="relative h-64 md:h-full bg-gradient-to-br from-purple-200 to-pink-200">
                 <img 
-                  src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
+                  src="https://github.com/user-attachments/assets/c62a8663-cb36-4878-a4f3-b2a8d13fedf3" 
                   alt="특별 혜택"
                   className="w-full h-full object-cover"
                 />
@@ -230,7 +230,7 @@ function App() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img 
-                  src="https://github.com/user-attachments/assets/c62a8663-cb36-4878-a4f3-b2a8d13fedf3" 
+                  src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
                   alt="우주꿀템"
                   className="h-8 w-8"
                 />
