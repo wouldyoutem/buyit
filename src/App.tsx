@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('/wouldyoutem/profiles/profiles.json')
+    fetch('/buyit/profiles/profiles.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('제품 데이터를 불러올 수 없습니다.');
