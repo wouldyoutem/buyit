@@ -2,123 +2,135 @@
   "products": [
     {
       "id": "1",
-      "productName": "다이슨 V15 디텍트 무선청소기 30% 할인",
+      "productName": "다이슨 V15 디텍트 무선청소기",
       "category": "생활가전",
-      "description": "⭐ 평점 4.8 | 3,247개 리뷰 검증 완료! 레이저로 먼지까지 찾아내는 스마트 청소기. 150분 장시간 사용 가능. 지금 바로 최저가로!",
+      "description": "⭐ 4.8점 (3,247개 리뷰) | 레이저로 먼지까지 찾아내는 스마트 청소기. 150분 장시간 사용",
       "price": "₩759,000",
       "originalPrice": "₩1,090,000",
       "discount": "30%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE1",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
-        "레이저 먼지 감지 기술",
-        "최대 150분 사용 가능",
-        "자동 필터 청소 시스템"
+        "레이저 먼지 감지",
+        "150분 장시간 사용",
+        "자동 필터 청소"
       ],
       "rating": 4.8,
       "reviewCount": 3247,
-      "seoKeywords": "다이슨청소기, 무선청소기추천, 다이슨V15, 청소기할인"
+      "seoKeywords": "다이슨청소기, 무선청소기추천",
+      "dateAdded": "2025-01-15"
     },
     {
       "id": "2",
-      "productName": "필립스 에어프라이어 XXL 7.3L 35% 할인",
+      "productName": "필립스 에어프라이어 XXL 7.3L",
       "category": "주방가전",
-      "description": "⭐ 평점 4.9 | 5,821개 리뷰! 기름 없이 바삭한 튀김 완성. 7인 가족용 대용량. 에너지 비용 80% 절약. 오늘 최저가!",
+      "description": "⭐ 4.9점 (5,821개 리뷰) | 기름 없이 바삭한 튀김. 7인 가족용 대용량. 에너지 80% 절약",
       "price": "₩279,000",
       "originalPrice": "₩429,000",
       "discount": "35%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE2",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
-        "7.3L 대용량으로 7인 가족용",
+        "7.3L 대용량",
         "에너지 80% 절약",
-        "기름 없이 바삭한 조리"
+        "기름 없이 조리"
       ],
       "rating": 4.9,
       "reviewCount": 5821,
-      "seoKeywords": "에어프라이어추천, 필립스에어프라이어, 대용량에어프라이어, 주방가전할인"
+      "seoKeywords": "에어프라이어추천, 필립스",
+      "dateAdded": "2025-01-14"
     },
     {
       "id": "3",
-      "productName": "나이키 에어맥스 270 운동화 32% 할인",
+      "productName": "나이키 에어맥스 270 운동화",
       "category": "패션잡화",
-      "description": "⭐ 평점 4.7 | 2,156개 리뷰! 하루종일 편한 쿠셔닝. 출퇴근·운동·데일리 모두 가능. 지금이 최저가 기회!",
+      "description": "⭐ 4.7점 (2,156개 리뷰) | 하루종일 편한 쿠셔닝. 출퇴근·운동·데일리 모두 가능",
       "price": "₩129,000",
       "originalPrice": "₩189,000",
       "discount": "32%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE3",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
-        "에어맥스 쿠셔닝 기술",
-        "통기성 메쉬 소재",
-        "다양한 스타일링 가능"
+        "에어맥스 쿠셔닝",
+        "통기성 메쉬",
+        "다양한 스타일링"
       ],
       "rating": 4.7,
       "reviewCount": 2156,
-      "seoKeywords": "나이키운동화, 에어맥스270, 운동화추천, 나이키할인"
+      "seoKeywords": "나이키운동화, 에어맥스270",
+      "dateAdded": "2025-01-13"
     },
     {
       "id": "4",
-      "productName": "삼성 갤럭시 버즈2 Pro 무선이어폰 37% 할인",
+      "productName": "삼성 갤럭시 버즈2 Pro 무선이어폰",
       "category": "디지털/가전",
-      "description": "⭐ 평점 4.6 | 4,892개 리뷰! 360도 입체 사운드 + 노이즈캔슬링. 배터리 18시간. 통화음질 최고. 지금 최저가!",
+      "description": "⭐ 4.6점 (4,892개 리뷰) | 360도 입체 사운드 + 노이즈캔슬링. 배터리 18시간",
       "price": "₩189,000",
       "originalPrice": "₩299,000",
       "discount": "37%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE4",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
         "360도 입체 사운드",
-        "지능형 노이즈캔슬링",
-        "최대 18시간 재생"
+        "노이즈캔슬링",
+        "18시간 재생"
       ],
       "rating": 4.6,
       "reviewCount": 4892,
-      "seoKeywords": "갤럭시버즈2프로, 무선이어폰추천, 삼성이어폰, 노이즈캔슬링이어폰"
+      "seoKeywords": "갤럭시버즈2프로, 무선이어폰",
+      "dateAdded": "2025-01-12"
     },
     {
       "id": "5",
-      "productName": "샤오미 접이식 워킹패드 런닝머신 44% 할인",
+      "productName": "샤오미 접이식 워킹패드 런닝머신",
       "category": "스포츠/레저",
-      "description": "⭐ 평점 4.5 | 1,834개 리뷰! 집에서 걸으면서 일하고 운동하기. 초슬림 디자인으로 침대 밑 보관. 최대 할인 중!",
+      "description": "⭐ 4.5점 (1,834개 리뷰) | 집에서 걸으면서 일하고 운동하기. 초슬림 디자인",
       "price": "₩329,000",
       "originalPrice": "₩590,000",
       "discount": "44%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE5",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
-        "접이식 초슬림 디자인",
-        "리모컨으로 속도 조절",
-        "조용한 작동으로 야간 사용 가능"
+        "접이식 초슬림",
+        "리모컨 속도조절",
+        "조용한 작동"
       ],
       "rating": 4.5,
       "reviewCount": 1834,
-      "seoKeywords": "워킹패드, 런닝머신추천, 샤오미런닝머신, 홈트레이닝"
+      "seoKeywords": "워킹패드, 런닝머신추천",
+      "dateAdded": "2025-01-11"
     },
     {
       "id": "6",
-      "productName": "코베아 큐브 2인용 텐트 40% 할인",
+      "productName": "코베아 큐브 2인용 텐트",
       "category": "캠핑/아웃도어",
-      "description": "⭐ 평점 4.7 | 2,567개 리뷰! 5분 원터치 설치. 방수 100% + 통풍 완벽. 캠핑 입문자 필수템. 지금 최저가!",
+      "description": "⭐ 4.7점 (2,567개 리뷰) | 5분 원터치 설치. 방수 100% + 통풍 완벽",
       "price": "₩149,000",
       "originalPrice": "₩249,000",
       "discount": "40%",
       "image": "https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f",
       "coupangLink": "https://www.coupang.com",
-      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "youtubeShorts": "https://www.youtube.com/shorts/EXAMPLE6",
+      "youtubeChannel": "https://www.youtube.com/@wouldyoutem",
       "features": [
-        "5분 원터치 간편 설치",
-        "완벽한 방수 처리",
-        "2-3인 여유로운 공간"
+        "5분 원터치 설치",
+        "완벽한 방수",
+        "2-3인 공간"
       ],
       "rating": 4.7,
       "reviewCount": 2567,
-      "seoKeywords": "텐트추천, 2인용텐트, 캠핑텐트, 코베아텐트"
+      "seoKeywords": "텐트추천, 2인용텐트",
+      "dateAdded": "2025-01-10"
     }
   ]
 }
