@@ -70,11 +70,9 @@ npm run build
 
 이 프로젝트는 GitHub Actions를 통해 자동으로 배포됩니다.
 
-1. GitHub 저장소의 **Settings** → **Pages**로 이동
-2. **Source**를 **GitHub Actions**로 선택
-3. `main` 브랜치에 푸시하면 자동으로 배포됩니다
-
 **배포 URL:** https://wouldyoutem.github.io/wouldyoutem/
+
+`main` 브랜치에 푸시하면 자동으로 배포됩니다.
 
 ## 🛠️ 기술 스택
 
