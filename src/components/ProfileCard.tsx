@@ -8,7 +8,7 @@ function ProfileCard({ profile }: ProfileCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
       <div className="p-6">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mb-4">
           <img
             src={profile.avatar}
             alt={profile.name}
@@ -20,7 +20,17 @@ function ProfileCard({ profile }: ProfileCardProps) {
           </div>
         </div>
 
-        <p className="mt-4 text-gray-600 line-clamp-3">{profile.bio}</p>
+        {profile.productName && (
+          <div className="mb-3 p-3 bg-yellow-50 rounded-lg border-2 border-yellow-200">
+            <p className="text-sm font-semibold text-yellow-800">🌟 추천 꿀템</p>
+            <p className="text-lg font-bold text-gray-900">{profile.productName}</p>
+            {profile.price && (
+              <p className="text-2xl font-bold text-red-600 mt-1">{profile.price}</p>
+            )}
+          </div>
+        )}
+
+        <p className="mt-3 text-gray-600 line-clamp-3">{profile.bio}</p>
 
         {profile.skills && profile.skills.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
@@ -29,42 +39,38 @@ function ProfileCard({ profile }: ProfileCardProps) {
                 key={index}
                 className="px-3 py-1 bg-indigo-50 text-indigo-700 text-sm rounded-full"
               >
-                {skill}
+                #{skill}
               </span>
             ))}
           </div>
         )}
 
         <div className="mt-6 flex space-x-3">
-          {profile.github && (
+          {profile.coupangLink && (
             <a
-              href={profile.github}
+              href={profile.coupangLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
+              className="flex-1 text-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all font-bold shadow-md"
             >
-              GitHub
+              🛒 쿠팡에서 보기
             </a>
           )}
-          {profile.website && (
+          {profile.youtubeLink && (
             <a
-              href={profile.website}
+              href={profile.youtubeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+              className="flex-1 text-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-bold shadow-md"
             >
-              Website
-            </a>
-          )}
-          {profile.email && (
-            <a
-              href={`mailto:${profile.email}`}
-              className="flex-1 text-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-            >
-              Email
+              ▶️ 유튜브 리뷰
             </a>
           )}
         </div>
+
+        <p className="mt-4 text-xs text-gray-500 text-center">
+          * 쿠팡 파트너스 활동으로 일정액의 수수료를 제공받습니다
+        </p>
       </div>
     </div>
   );
