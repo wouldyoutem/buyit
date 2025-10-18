@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import ProfileList from './components/ProfileList';
-import { ProfileData } from './types/profile';
+import ProductList from './components/ProfileList';
+import { ProductData } from './types/profile';
 
 function App() {
-  const [profileData, setProfileData] = useState<ProfileData | null>(null);
+  const [productData, setProductData] = useState<ProductData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -11,12 +11,12 @@ function App() {
     fetch('/wouldyoutem/profiles/profiles.json')
       .then(response => {
         if (!response.ok) {
-          throw new Error('프로필 데이터를 불러올 수 없습니다.');
+          throw new Error('제품 데이터를 불러올 수 없습니다.');
         }
         return response.json();
       })
       .then(data => {
-        setProfileData(data);
+        setProductData(data);
         setLoading(false);
       })
       .catch(err => {
@@ -27,10 +27,10 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400"></div>
-          <p className="mt-4 text-yellow-200">우주 탐험 중...</p>
+          <div className="inline-block animate-spin rounded-full h-16 w-16 border-b-4 border-blue-600"></div>
+          <p className="mt-4 text-gray-600 text-lg">로딩 중...</p>
         </div>
       </div>
     );
@@ -38,46 +38,90 @@ function App() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center">
-        <div className="text-center bg-white p-8 rounded-lg shadow-lg">
-          <p className="text-red-600 text-lg">{error}</p>
-          <p className="mt-2 text-gray-600">profiles.json 파일을 확인해주세요.</p>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
+        <div className="text-center bg-white p-8 rounded-xl shadow-lg">
+          <p className="text-red-600 text-lg font-semibold">{error}</p>
+          <p className="mt-2 text-gray-600">데이터를 확인해주세요.</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
-      <header className="bg-gray-900/80 backdrop-blur-sm shadow-lg border-b-2 border-yellow-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center space-x-4">
-            <div className="text-5xl">🪐</div>
-            <div>
-              <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      {/* 메인 배너 */}
+      <div className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="text-white space-y-6">
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
                 우주꿀템
               </h1>
-              <p className="mt-1 text-yellow-200">Would you buy it? 우주 끝까지 찾아온 진짜 꿀템들!</p>
+              <p className="text-2xl md:text-3xl font-semibold text-yellow-300">
+                Would you buy it?
+              </p>
+              <p className="text-xl text-blue-100">
+                검증된 리얼 꿀템만 모았습니다
+              </p>
+              <div className="flex flex-wrap gap-4 text-sm">
+                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span>✓</span>
+                  <span>최저가 보장</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span>✓</span>
+                  <span>실사용 후기</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span>✓</span>
+                  <span>빠른 배송</span>
+                </div>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <img 
+                src="https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/main-banner.png" 
+                alt="우주꿀템 배너"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+                onError={(e) => {
+                  // 이미지 로드 실패 시 이모지로 대체
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
             </div>
           </div>
         </div>
-      </header>
-      
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8 text-center">
-          <p className="text-yellow-300 text-lg">
-            ✨ 우주 탐험가들이 직접 사용하고 추천하는 가성비 꿀템! ✨
+      </div>
+
+      {/* 메인 컨텐츠 */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">
+            🔥 지금 가장 핫한 꿀템
+          </h2>
+          <p className="text-gray-600">
+            실제 사용자들이 강력 추천하는 제품들을 만나보세요
           </p>
         </div>
-        {profileData && <ProfileList profiles={profileData.profiles} />}
+        
+        {productData && <ProductList products={productData.products} />}
       </main>
 
-      <footer className="bg-gray-900/80 backdrop-blur-sm mt-12 border-t-2 border-yellow-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
-          <p className="text-yellow-200 mb-2">
-            🌟 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
-          </p>
-          <p className="text-gray-400 text-sm">© 2024 우주꿀템. All rights reserved.</p>
+      {/* 푸터 */}
+      <footer className="bg-white border-t border-gray-200 mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center space-y-3">
+            <p className="text-gray-600 font-semibold">
+              📢 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+            </p>
+            <p className="text-gray-500 text-sm">
+              본 포스팅은 제휴 마케팅이 포함된 광고로 일정 커미션을 지급받을 수 있습니다.
+            </p>
+            <p className="text-gray-400 text-sm">
+              © 2024 우주꿀템 (WouldYouTem). All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
