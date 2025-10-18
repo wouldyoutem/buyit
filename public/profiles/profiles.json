@@ -2,64 +2,75 @@
   "profiles": [
     {
       "id": "1",
-      "name": "홍길동",
-      "role": "Frontend Developer",
-      "bio": "React와 TypeScript를 사랑하는 프론트엔드 개발자입니다. 사용자 경험을 최우선으로 생각하며, 깔끔하고 효율적인 코드를 작성하기 위해 노력합니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
-      "github": "https://github.com/username1",
-      "website": "https://example.com",
-      "email": "hong@example.com",
-      "skills": ["React", "TypeScript", "Tailwind CSS", "Vite"]
+      "name": "우주 탐험가 루나",
+      "role": "가전제품 전문가",
+      "bio": "10년간 우주를 여행하며 발견한 생활 필수템! 무선 청소기부터 공기청정기까지, 실제로 사용해본 제품만 추천합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "다이슨 V15 무선청소기",
+      "price": "₩899,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["가전", "청소", "생활용품", "가성비"]
     },
     {
       "id": "2",
-      "name": "김철수",
-      "role": "Backend Developer",
-      "bio": "확장 가능하고 안정적인 백엔드 시스템을 구축하는 것을 좋아합니다. Node.js와 데이터베이스 최적화에 관심이 많습니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka",
-      "github": "https://github.com/username2",
-      "email": "kim@example.com",
-      "skills": ["Node.js", "PostgreSQL", "Docker", "AWS"]
+      "name": "화성 요리사 제임스",
+      "role": "주방용품 큐레이터",
+      "bio": "화성 기지에서도 사용하는 꿀템 주방용품! 에어프라이어, 믹서기, 조리도구까지 요리가 즐거워지는 아이템들을 소개합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "필립스 에어프라이어 XXL",
+      "price": "₩299,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["주방", "요리", "에어프라이어", "건강"]
     },
     {
       "id": "3",
-      "name": "이영희",
-      "role": "UI/UX Designer",
-      "bio": "사용자 중심의 디자인을 만드는 것이 저의 열정입니다. 직관적이고 아름다운 인터페이스를 통해 더 나은 사용자 경험을 제공하고자 합니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Patches",
-      "website": "https://portfolio.example.com",
-      "email": "lee@example.com",
-      "skills": ["Figma", "Adobe XD", "Prototyping", "User Research"]
+      "name": "목성 패셔니스타 소피아",
+      "role": "패션/뷰티 전문가",
+      "bio": "우주에서도 스타일은 포기할 수 없죠! 가성비 좋은 의류, 신발, 화장품까지 트렌디한 아이템들을 추천합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "나이키 에어맥스 운동화",
+      "price": "₩129,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["패션", "뷰티", "운동화", "스타일"]
     },
     {
       "id": "4",
-      "name": "박민수",
-      "role": "Full Stack Developer",
-      "bio": "프론트엔드부터 백엔드까지 전체 스택을 다루는 개발자입니다. 새로운 기술을 배우고 적용하는 것을 즐깁니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight",
-      "github": "https://github.com/username4",
-      "website": "https://blog.example.com",
-      "skills": ["React", "Node.js", "MongoDB", "GraphQL"]
+      "name": "토성 테크 마스터 알렉스",
+      "role": "IT/디지털 전문가",
+      "bio": "최신 가젯부터 알뜰한 전자기기까지! 무선이어폰, 스마트워치, 노트북 액세서리 등 테크 꿀템을 소개합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "삼성 갤럭시 버즈 2 Pro",
+      "price": "₩229,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["IT", "가젯", "이어폰", "테크"]
     },
     {
       "id": "5",
-      "name": "최지은",
-      "role": "DevOps Engineer",
-      "bio": "안정적인 인프라와 자동화된 배포 파이프라인을 구축합니다. CI/CD와 클라우드 서비스에 대한 깊은 이해를 가지고 있습니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Smokey",
-      "github": "https://github.com/username5",
-      "email": "choi@example.com",
-      "skills": ["Kubernetes", "Jenkins", "Terraform", "GCP"]
+      "name": "금성 헬스 트레이너 마르쿠스",
+      "role": "운동/건강 전문가",
+      "bio": "무중력 공간에서도 건강관리는 필수! 홈트레이닝 기구, 요가매트, 건강보조식품까지 운동 꿀템을 추천합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "접이식 런닝머신",
+      "price": "₩399,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["운동", "건강", "홈트", "헬스"]
     },
     {
       "id": "6",
-      "name": "정우진",
-      "role": "Mobile Developer",
-      "bio": "네이티브와 크로스 플랫폼 모바일 앱 개발에 경험이 있습니다. 성능과 사용성을 모두 만족시키는 앱을 만듭니다.",
-      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Milo",
-      "github": "https://github.com/username6",
-      "website": "https://apps.example.com",
-      "skills": ["React Native", "Flutter", "iOS", "Android"]
+      "name": "수성 캠핑 전문가 올리비아",
+      "role": "아웃도어 큐레이터",
+      "bio": "우주 캠핑의 달인! 텐트, 침낭, 캠핑용품부터 등산 장비까지 아웃도어 생활을 완벽하게 만들어줄 꿀템들을 소개합니다.",
+      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
+      "productName": "코베아 2인용 텐트",
+      "price": "₩159,000",
+      "coupangLink": "https://www.coupang.com",
+      "youtubeLink": "https://www.youtube.com/@wouldyoutem",
+      "skills": ["캠핑", "아웃도어", "등산", "여행"]
     }
   ]
 }
