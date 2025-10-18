@@ -81,7 +81,7 @@ function App() {
             </div>
             <div className="hidden md:block">
               <img 
-                src="https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/main-banner.png" 
+                src="https://github.com/user-attachments/assets/9abd03a9-e311-4c44-a1b4-e36867eaacca" 
                 alt="우주꿀템 배너"
                 className="w-full h-auto rounded-2xl shadow-2xl"
                 onError={(e) => {
