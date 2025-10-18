@@ -1,54 +1,44 @@
-# 우주꿀템 (WouldYouTem)
+# 우주꿀템 (BuyIt)
 
 > **Would you buy it?** 실사용 후기로 검증된 진짜 꿀템만 추천합니다!
 
-[![배포 상태](https://img.shields.io/badge/deploy-success-brightgreen)](https://wouldyoutem.github.io/wouldyoutem/)
+[![배포 상태](https://img.shields.io/badge/deploy-success-brightgreen)](https://wouldyoutem.github.io/buyit/)
 [![쿠팡 파트너스](https://img.shields.io/badge/Coupang-Partners-orange)](https://www.coupang.com)
 
 ## 🎯 프로젝트 목표
 
-**CTR(클릭률) 최적화**를 통한 쿠팡 파트너스 수익 극대화
-- 🔥 할인율 강조로 구매 욕구 자극
-- ⭐ 평점/리뷰 수로 신뢰도 구축
-- 💡 명확한 CTA 버튼으로 전환율 향상
-- 📱 모바일 최적화로 접근성 강화
+**모바일 CTR(클릭률) 최적화**를 통한 쿠팡 파트너스 수익 극대화
+- 📱 모바일 First 디자인
+- 🎬 유튜브 쇼츠 연동
+- 💰 명확한 CTA 버튼
+- ⚡ 빠른 로딩
 
 ## ✨ 주요 기능
 
-### CTR 최적화 요소
-- **할인율 뱃지**: 빨간색으로 강조되는 할인율 표시
-- **가격 비교**: 원가 대비 할인가 명확히 표시
-- **리뷰 신뢰도**: 별점과 리뷰 수로 구매 확신 제공
-- **명확한 CTA**: "최저가로 구매하기" 등 행동 유도 문구
-- **제품 특징**: 핵심 기능 3가지 요약 제공
+### 유튜브 쇼츠 연동
+- **쇼츠 버튼**: 제품 이미지에 바로 연결
+- **자동 정렬**: 최신 상품 우선 표시
+- **NEW 뱃지**: 7일 이내 추가 상품 표시
 
-### 사용자 경험
-- 🔍 **검색 기능**: 제품명, 설명, 특징으로 검색
-- 🏷️ **카테고리 필터**: 생활가전, 주방가전, 패션 등
-- 📱 **반응형 디자인**: 모바일/태블릿/데스크톱 최적화
-- ⚡ **빠른 로딩**: Vite 기반 초고속 빌드
+### 모바일 CTR 최적화
+- **큰 터치 영역**: 44px+ (Apple HIG 기준)
+- **터치 피드백**: active:scale 효과
+- **간결한 정보**: 핵심만 표시
+- **빠른 CTA 도달**: 스크롤 최소화
 
 ## 🛠️ 기술 스택
 
 - **Frontend**: React 18 + TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS (Mobile First)
 - **Build**: Vite
 - **Deployment**: GitHub Pages + GitHub Actions
-
-## 📊 성과 지표
-
-### 최적화된 CTR 요소
-1. **할인 강조**: 최대 44% 할인 뱃지
-2. **긴급성 표현**: "지금 바로", "최저가"
-3. **사회적 증거**: 평점 4.5+ / 리뷰 1000+ 
-4. **시각적 계층**: 가격 > CTA 버튼 > 상세정보
 
 ## 🚀 시작하기
 
 ```bash
 # 저장소 클론
-git clone https://github.com/wouldyoutem/wouldyoutem.git
-cd wouldyoutem
+git clone https://github.com/wouldyoutem/buyit.git
+cd buyit
 
 # 의존성 설치
 npm install
@@ -58,86 +48,59 @@ npm run dev
 
 # 프로덕션 빌드
 npm run build
+
+# 상품 검증 (로컬)
+npm run check-product
 ```
 
-## 📝 제품 추가하기
+## 📝 상품 추가하기
 
 `public/profiles/profiles.json` 수정:
 
 ```json
 {
-  "id": "1",
-  "productName": "제품명 (구체적이고 매력적으로)",
+  "id": "7",
+  "productName": "제품명",
   "category": "카테고리",
-  "description": "혜택 중심의 한 줄 설명! 숫자와 구체적 효과 포함",
-  "price": "₩할인가",
-  "originalPrice": "₩정가",
-  "discount": "XX%",
-  "image": "이미지 URL",
+  "description": "간단한 설명",
+  "image": "이미지URL",
   "coupangLink": "쿠팡 파트너스 링크",
-  "youtubeLink": "리뷰 영상 링크",
-  "features": [
-    "핵심 혜택 1 (숫자 포함)",
-    "핵심 혜택 2 (비교 우위)",
-    "핵심 혜택 3 (독특한 특징)"
-  ],
-  "rating": 4.8,
-  "reviewCount": 3247
+  "youtubeShorts": "유튜브 쇼츠 링크",
+  "features": ["특징1", "특징2", "특징3"],
+  "highlight": "핵심 포인트 한 줄",
+  "dateAdded": "2025-01-20"
 }
 ```
 
-### 💡 상품 설명 작성 팁
+**중요**: 가격, 평점, 리뷰수는 입력하지 마세요! (실시간 변동)
 
-**나쁜 예**: "좋은 청소기입니다"
-**좋은 예**: "150분 사용 가능! 레이저로 먼지 찾는 똑똑한 청소기"
+## 🤖 자동 검증 시스템
 
-**핵심 원칙**:
-- 숫자 사용 (시간, 용량, 절약액)
-- 구체적 혜택 명시
-- 감성 자극 단어 (바삭한, 완벽한, 똑똑한)
-- 간결하게 한 줄로
+상품 추가 시 자동으로:
+- ✅ 필수 필드 검증
+- ✅ 유튜브 최적화 팁 생성
+- ✅ 제목 3가지 제안
+- ✅ 설명란 템플릿 생성
+- ✅ 해시태그 추천
 
-## 🎬 유튜브 연동 전략
+## 📱 모바일 최적화
 
-### 영상 제목 예시
-```
-✅ "이거 진짜 대박! [제품명] 1개월 솔직 후기"
-✅ "[제품명] 살까 말까? 장단점 총정리 (쿠팡 최저가)"
-✅ "30만원짜리를 15만원에? [제품명] 꿀팁 대공개"
-```
+- Above the Fold 최적화
+- 큰 터치 영역 (44px+)
+- 터치 피드백
+- 간결한 레이아웃
+- 빠른 CTA 도달
 
-### 영상 설명란
-```
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/wouldyoutem/
-⏰ 타임라인
-0:00 인트로
-0:30 개봉기
-2:00 주요 기능
-5:00 실사용 후기
-7:00 장단점 정리
+## 📊 운영 가이드
 
-💰 쿠팡 파트너스 활동으로 일정액의 수수료를 받습니다
-```
+- **상품 추가**: [OPERATION_GUIDE.md](./OPERATION_GUIDE.md)
+- **Claude 가이드**: [CLAUDE_GUIDE.md](./CLAUDE_GUIDE.md)
 
-## 📈 CTR 향상 전략
+## 🌐 배포
 
-### A. 시각적 최적화
-- ✅ 할인율 빨간색 강조
-- ✅ CTA 버튼 그라데이션
-- ✅ 호버 효과로 인터랙션
-- ✅ 고품질 제품 이미지
+**사이트**: https://wouldyoutem.github.io/buyit/
 
-### B. 카피라이팅
-- ✅ 행동 유도어: "지금 바로", "최저가로"
-- ✅ 긴급성: "오늘만", "한정 수량"
-- ✅ 신뢰성: 평점, 리뷰 수
-- ✅ 혜택 강조: "무료배송", "XX% 할인"
-
-### C. 데이터 기반 개선
-- 📊 Google Analytics 연동
-- 🎯 클릭 히트맵 분석
-- 📈 A/B 테스팅 진행
-- 💰 전환율 추적
+**유튜브**: https://www.youtube.com/@wouldyoutem
 
 ## ⚠️ 법적 고지
 
@@ -146,11 +109,6 @@ npm run build
 ## 📄 라이선스
 
 MIT License
-
-## 📞 문의
-
-- 이메일: dlwoen9@gmail.com
-- GitHub: [@wouldyoutem](https://github.com/wouldyoutem)
 
 ---
 
