@@ -1,0 +1,32 @@
+name: 상품 업데이트 가이드 체크
+
+on:
+  pull_request:
+    paths:
+      - 'public/profiles/profiles.json'
+  push:
+    paths:
+      - 'public/profiles/profiles.json'
+    branches:
+      - main
+
+jobs:
+  check-and-guide:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 코드
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      
+      - name: Node.js 설정
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: 상품 업데이트 검증 및 가이드 생성
+        run: |
+          node .github/scripts/check-product-update.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
