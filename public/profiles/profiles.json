@@ -1,76 +1,118 @@
 {
-  "profiles": [
+  "products": [
     {
       "id": "1",
-      "name": "우주 탐험가 루나",
-      "role": "가전제품 전문가",
-      "bio": "10년간 우주를 여행하며 발견한 생활 필수템! 무선 청소기부터 공기청정기까지, 실제로 사용해본 제품만 추천합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "다이슨 V15 무선청소기",
-      "price": "₩899,000",
+      "productName": "다이슨 V15 디텍트 무선청소기",
+      "category": "생활가전",
+      "description": "레이저로 먼지를 찾아내는 똑똑한 청소기! 150분 사용 가능하고 필터 청소도 자동",
+      "price": "₩759,000",
+      "originalPrice": "₩1,090,000",
+      "discount": "30%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["가전", "청소", "생활용품", "가성비"]
+      "features": [
+        "레이저 먼지 감지 기술",
+        "최대 150분 사용 가능",
+        "자동 필터 청소 시스템"
+      ],
+      "rating": 4.8,
+      "reviewCount": 3247
     },
     {
       "id": "2",
-      "name": "화성 요리사 제임스",
-      "role": "주방용품 큐레이터",
-      "bio": "화성 기지에서도 사용하는 꿀템 주방용품! 에어프라이어, 믹서기, 조리도구까지 요리가 즐거워지는 아이템들을 소개합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "필립스 에어프라이어 XXL",
-      "price": "₩299,000",
+      "productName": "필립스 에어프라이어 XXL 7.3L",
+      "category": "주방가전",
+      "description": "기름 없이 바삭한 튀김 완성! 7인 가족도 한 번에 OK, 에너지 절약 80%",
+      "price": "₩279,000",
+      "originalPrice": "₩429,000",
+      "discount": "35%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["주방", "요리", "에어프라이어", "건강"]
+      "features": [
+        "7.3L 대용량으로 7인 가족용",
+        "에너지 80% 절약",
+        "기름 없이 바삭한 조리"
+      ],
+      "rating": 4.9,
+      "reviewCount": 5821
     },
     {
       "id": "3",
-      "name": "목성 패셔니스타 소피아",
-      "role": "패션/뷰티 전문가",
-      "bio": "우주에서도 스타일은 포기할 수 없죠! 가성비 좋은 의류, 신발, 화장품까지 트렌디한 아이템들을 추천합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "나이키 에어맥스 운동화",
+      "productName": "나이키 에어맥스 270 운동화",
+      "category": "패션잡화",
+      "description": "하루 종일 신어도 편한 최강 쿠셔닝! 출퇴근, 운동, 데일리룩 모두 완벽",
       "price": "₩129,000",
+      "originalPrice": "₩189,000",
+      "discount": "32%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["패션", "뷰티", "운동화", "스타일"]
+      "features": [
+        "에어맥스 쿠셔닝 기술",
+        "통기성 메쉬 소재",
+        "다양한 스타일링 가능"
+      ],
+      "rating": 4.7,
+      "reviewCount": 2156
     },
     {
       "id": "4",
-      "name": "토성 테크 마스터 알렉스",
-      "role": "IT/디지털 전문가",
-      "bio": "최신 가젯부터 알뜰한 전자기기까지! 무선이어폰, 스마트워치, 노트북 액세서리 등 테크 꿀템을 소개합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "삼성 갤럭시 버즈 2 Pro",
-      "price": "₩229,000",
+      "productName": "삼성 갤럭시 버즈2 Pro 무선이어폰",
+      "category": "디지털/가전",
+      "description": "360도 입체 사운드 + 노이즈캔슬링! 통화 품질 끝판왕, 배터리 18시간",
+      "price": "₩189,000",
+      "originalPrice": "₩299,000",
+      "discount": "37%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["IT", "가젯", "이어폰", "테크"]
+      "features": [
+        "360도 입체 사운드",
+        "지능형 노이즈캔슬링",
+        "최대 18시간 재생"
+      ],
+      "rating": 4.6,
+      "reviewCount": 4892
     },
     {
       "id": "5",
-      "name": "금성 헬스 트레이너 마르쿠스",
-      "role": "운동/건강 전문가",
-      "bio": "무중력 공간에서도 건강관리는 필수! 홈트레이닝 기구, 요가매트, 건강보조식품까지 운동 꿀템을 추천합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "접이식 런닝머신",
-      "price": "₩399,000",
+      "productName": "샤오미 접이식 워킹패드 런닝머신",
+      "category": "스포츠/레저",
+      "description": "집에서 걸으면서 일하고 넷플릭스 보기! 초슬림 디자인으로 침대 밑 보관 가능",
+      "price": "₩329,000",
+      "originalPrice": "₩590,000",
+      "discount": "44%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["운동", "건강", "홈트", "헬스"]
+      "features": [
+        "접이식 초슬림 디자인",
+        "리모컨으로 속도 조절",
+        "조용한 작동으로 야간 사용 가능"
+      ],
+      "rating": 4.5,
+      "reviewCount": 1834
     },
     {
       "id": "6",
-      "name": "수성 캠핑 전문가 올리비아",
-      "role": "아웃도어 큐레이터",
-      "bio": "우주 캠핑의 달인! 텐트, 침낭, 캠핑용품부터 등산 장비까지 아웃도어 생활을 완벽하게 만들어줄 꿀템들을 소개합니다.",
-      "avatar": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/astronaut-profile.png",
-      "productName": "코베아 2인용 텐트",
-      "price": "₩159,000",
+      "productName": "코베아 큐브 2인용 텐트",
+      "category": "캠핑/아웃도어",
+      "description": "5분 설치 원터치 텐트! 방수 100% + 통풍 완벽, 캠핑 입문자 필수템",
+      "price": "₩149,000",
+      "originalPrice": "₩249,000",
+      "discount": "40%",
+      "image": "https://raw.githubusercontent.com/wouldyoutem/wouldyoutem/main/public/images/logo.png",
       "coupangLink": "https://www.coupang.com",
       "youtubeLink": "https://www.youtube.com/@wouldyoutem",
-      "skills": ["캠핑", "아웃도어", "등산", "여행"]
+      "features": [
+        "5분 원터치 간편 설치",
+        "완벽한 방수 처리",
+        "2-3인 여유로운 공간"
+      ],
+      "rating": 4.7,
+      "reviewCount": 2567
     }
   ]
 }
