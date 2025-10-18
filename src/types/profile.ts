@@ -1,16 +1,19 @@
-export interface Profile {
+export interface Product {
   id: string;
-  name: string;
-  role: string;
-  bio: string;
-  avatar: string;
-  coupangLink?: string;
+  productName: string;
+  category: string;
+  description: string;
+  price: string;
+  originalPrice?: string;
+  discount?: string;
+  image: string;
+  coupangLink: string;
   youtubeLink?: string;
-  productName?: string;
-  price?: string;
-  skills?: string[];
+  features: string[];
+  rating?: number;
+  reviewCount?: number;
 }
 
-export interface ProfileData {
-  profiles: Profile[];
+export interface ProductData {
+  products: Product[];
 }
