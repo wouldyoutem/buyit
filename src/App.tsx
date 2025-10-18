@@ -16,7 +16,7 @@ function App() {
         return response.json();
       })
       .then(data => {
-        // 최신순 정렬 (dateAdded 기준)
+        // 최신순 정렬
         const sortedProducts = data.products.sort((a: any, b: any) => {
           return new Date(b.dateAdded || 0).getTime() - new Date(a.dateAdded || 0).getTime();
         });
@@ -63,7 +63,7 @@ function App() {
               />
               <div>
                 <h1 className="text-lg font-bold text-gray-900">우주꿀템</h1>
-                <p className="text-xs text-gray-500">YouTube에서 확인하세요</p>
+                <p className="text-xs text-gray-500">진짜 꿀템만 추천</p>
               </div>
             </div>
             <a
@@ -84,7 +84,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="text-center">
             <h2 className="text-xl font-bold mb-2">
-              📹 실사용 리뷰 영상이 궁금하다면?
+              📹 실사용 리뷰가 궁금하다면?
             </h2>
             <p className="text-sm mb-3 text-white/90">
               유튜브 쇼츠로 1분 안에 확인하세요!
@@ -104,19 +104,12 @@ function App() {
       {/* 메인 */}
       <main className="max-w-6xl mx-auto px-4 py-8">
         <div className="mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-1">
-                🔥 최신 꿀템
-              </h2>
-              <p className="text-sm text-gray-600">
-                실구매자 평점 4.5+ 검증 완료
-              </p>
-            </div>
-            <div className="text-xs text-gray-500">
-              총 {productData?.products.length || 0}개
-            </div>
-          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            🔥 최신 꿀템
+          </h2>
+          <p className="text-sm text-gray-600">
+            직접 써보고 추천하는 진짜 가성비 제품
+          </p>
         </div>
         
         {productData && <ProductList products={productData.products} />}
@@ -143,30 +136,6 @@ function App() {
             <span>우주꿀템 구독하기</span>
           </a>
         </section>
-
-        {/* SEO 콘텐츠 */}
-        <section className="mt-12 bg-white rounded-lg p-6 text-sm text-gray-700 border">
-          <h3 className="font-bold text-base mb-3">🎯 우주꿀템 - 유튜브 쇼츠로 보는 진짜 꿀템</h3>
-          <p className="mb-4 leading-relaxed">
-            우주꿀템은 실구매자 평점 4.5 이상, 리뷰 1,000개 이상 검증된 제품만 엄선합니다. 
-            <strong>유튜브 쇼츠</strong>로 1분 안에 제품의 핵심 포인트를 확인하고, 
-            <strong>쿠팡 최저가</strong>로 바로 구매하세요.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4 text-xs">
-            <div className="bg-gray-50 p-3 rounded">
-              <div className="font-bold mb-1">📹 유튜브 쇼츠</div>
-              <div className="text-gray-600">1분 실사용 리뷰</div>
-            </div>
-            <div className="bg-gray-50 p-3 rounded">
-              <div className="font-bold mb-1">⭐ 검증된 제품</div>
-              <div className="text-gray-600">평점 4.5+ 보장</div>
-            </div>
-            <div className="bg-gray-50 p-3 rounded">
-              <div className="font-bold mb-1">💰 최저가</div>
-              <div className="text-gray-600">쿠팡 할인가</div>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* 푸터 */}
@@ -181,7 +150,7 @@ function App() {
               />
               <div>
                 <div className="font-bold">우주꿀템</div>
-                <div className="text-xs text-gray-400">실구매자 검증 꿀템 추천</div>
+                <div className="text-xs text-gray-400">진짜 꿀템만 추천</div>
               </div>
             </div>
             <a
@@ -196,6 +165,7 @@ function App() {
           </div>
           <div className="text-center text-xs text-gray-500 space-y-2 pt-6 border-t border-gray-800">
             <p>쿠팡 파트너스 활동으로 일정 수수료를 받습니다</p>
+            <p>가격과 재고는 실시간으로 변동될 수 있습니다</p>
             <p>© 2025 우주꿀템. All rights reserved.</p>
           </div>
         </div>
