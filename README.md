@@ -1,78 +1,26 @@
-# WouldYouTem 프로필 웹사이트
+# 우주꿀템 (WouldYouTem)
 
-React + TypeScript + Tailwind CSS로 제작된 팀 멤버 프로필 리스트 웹사이트입니다.
+"우주 끝까지 찾아온 진짜 꿀템들!"
 
-## 🚀 기능
+## 🌟 소개
 
-- 📱 반응형 디자인 (모바일, 태블릿, 데스크톱 지원)
-- 🔍 실시간 프로필 검색 기능
-- 🎨 Tailwind CSS를 활용한 모던한 UI/UX
-- ⚡ Vite를 통한 빠른 빌드와 개발 서버
-- 🔄 GitHub Actions를 통한 자동 배포 (CI/CD)
+**우주꿀템**은 쿠팡에서 엄선한 가성비 최고의 제품들을 소개하는 큐레이션 사이트입니다.
 
-## 📋 사전 요구사항
+우주 곳곳을 여행하며 발견한 진짜 꿀템들을 여러분께 추천합니다!
 
-- Node.js 18 이상
-- npm 또는 yarn
+## 🎯 프로젝트 목적
 
-## 🛠️ 설치 및 실행
+- 🛍️ **쿠팡 파트너스 연동**: 엄선된 가성비 제품 추천
+- 🎥 **유튜브 채널 연동**: 제품 리뷰 영상 제공
+- 💎 **큐레이션**: 실제 사용 후기 기반 제품 선별
+- 🔗 **원클릭 구매**: 쿠팡 링크로 바로 연결
 
-### 1. 저장소 클론
+## 🚀 특징
 
-```bash
-git clone https://github.com/wouldyoutem/wouldyoutem.git
-cd wouldyoutem
-```
-
-### 2. 의존성 설치
-
-```bash
-npm install
-```
-
-### 3. 개발 서버 실행
-
-```bash
-npm run dev
-```
-
-브라우저에서 `http://localhost:5173`으로 접속하세요.
-
-### 4. 프로덕션 빌드
-
-```bash
-npm run build
-```
-
-빌드된 파일은 `dist` 폴더에 생성됩니다.
-
-## 📝 프로필 추가하기
-
-`public/profiles/profiles.json` 파일에 새로운 프로필을 추가하세요:
-
-```json
-{
-  "id": "고유ID",
-  "name": "이름",
-  "role": "직책",
-  "bio": "소개",
-  "avatar": "아바타 이미지 URL",
-  "github": "GitHub URL (선택)",
-  "website": "웹사이트 URL (선택)",
-  "email": "이메일 (선택)",
-  "skills": ["스킬1", "스킬2", "스킬3"]
-}
-```
-
-## 🚀 배포
-
-### GitHub Pages
-
-이 프로젝트는 GitHub Actions를 통해 자동으로 배포됩니다.
-
-**배포 URL:** https://wouldyoutem.github.io/wouldyoutem/
-
-`main` 브랜치에 푸시하면 자동으로 배포됩니다.
+- 📱 반응형 디자인으로 모바일 최적화
+- 🔍 제품 검색 및 필터링 기능
+- 🌌 우주 테마의 독특한 디자인
+- ⚡ 빠른 로딩과 쾌적한 사용자 경험
 
 ## 🛠️ 기술 스택
 
@@ -82,16 +30,45 @@ npm run build
 - **빌드 도구**: Vite
 - **배포**: GitHub Pages + GitHub Actions
 
+## 🌐 배포 URL
+
+**사이트:** https://wouldyoutem.github.io/wouldyoutem/
+
+**유튜브 채널:** (준비 중)
+
+## 💡 사용 방법
+
+1. 웹사이트에서 관심있는 큐레이터 클릭
+2. 큐레이터가 추천하는 꿀템 확인
+3. 쿠팡 링크를 통해 제품 구매
+4. 유튜브 채널에서 상세 리뷰 영상 시청
+
+## 📝 제품 추가하기
+
+`public/profiles/profiles.json` 파일에 새로운 큐레이터와 추천 제품을 추가하세요:
+
+```json
+{
+  "id": "고유ID",
+  "name": "큐레이터 이름",
+  "role": "전문 분야",
+  "bio": "소개 및 추천 제품 설명",
+  "avatar": "아바타 이미지 URL",
+  "coupangLink": "쿠팡 파트너스 링크",
+  "youtubeLink": "유튜브 영상 링크",
+  "skills": ["카테고리1", "카테고리2"]
+}
+```
+
+## ⚠️ 파트너스 고지
+
+이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+
 ## 📄 라이선스
 
 MIT License
 
-## 🤝 기여하기
+## 🤝 문의
 
-프로필 추가 및 버그 수정을 환영합니다!
-
-1. 이 저장소를 Fork 하세요
-2. Feature 브랜치를 생성하세요 (`git checkout -b feature/AmazingFeature`)
-3. 변경사항을 커밋하세요 (`git commit -m 'Add some AmazingFeature'`)
-4. 브랜치에 Push 하세요 (`git push origin feature/AmazingFeature`)
-5. Pull Request를 생성하세요
+- 이메일: dlwoen9@gmail.com
+- GitHub: [@wouldyoutem](https://github.com/wouldyoutem)
