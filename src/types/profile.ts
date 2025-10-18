@@ -4,9 +4,10 @@ export interface Profile {
   role: string;
   bio: string;
   avatar: string;
-  github?: string;
-  website?: string;
-  email?: string;
+  coupangLink?: string;
+  youtubeLink?: string;
+  productName?: string;
+  price?: string;
   skills?: string[];
 }
 
