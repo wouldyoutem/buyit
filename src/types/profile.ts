@@ -8,11 +8,13 @@ export interface Product {
   discount?: string;
   image: string;
   coupangLink: string;
-  youtubeLink?: string;
+  youtubeShorts?: string;
+  youtubeChannel?: string;
   features: string[];
   rating?: number;
   reviewCount?: number;
   seoKeywords?: string;
+  dateAdded?: string;
 }
 
 export interface ProductData {
