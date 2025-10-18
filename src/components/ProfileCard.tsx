@@ -6,9 +6,9 @@ interface ProductCardProps {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="bg-white rounded-xl overflow-hidden hover:shadow-xl transition-all border border-gray-200">
-      {/* 이미지 + 쇼츠 오버레이 */}
-      <div className="relative bg-gray-50 aspect-square group">
+    <article className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200">
+      {/* 이미지 - 모바일에서 더 작게 */}
+      <div className="relative bg-gray-50 aspect-video sm:aspect-square">
         <img
           src={product.image}
           alt={product.productName}
@@ -16,98 +16,96 @@ function ProductCard({ product }: ProductCardProps) {
           loading="lazy"
         />
         
-        {/* 유튜브 쇼츠 버튼 오버레이 */}
+        {/* NEW 뱃지 */}
+        {product.dateAdded && 
+         new Date(product.dateAdded).getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000 && (
+          <div className="absolute top-2 right-2">
+            <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold shadow-lg">
+              🆕 NEW
+            </span>
+          </div>
+        )}
+        
+        {/* 유튜브 쇼츠 버튼 - 모바일에서 항상 보이게 */}
         {product.youtubeShorts && (
           <a
             href={product.youtubeShorts}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all flex items-center justify-center"
+            className="absolute bottom-2 right-2 bg-red-600 text-white p-2.5 rounded-full shadow-lg hover:bg-red-700 transition-colors active:scale-95"
             aria-label={`${product.productName} 유튜브 쇼츠 보기`}
           >
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-red-600 text-white p-5 rounded-full shadow-2xl">
-              <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
           </a>
-        )}
-        
-        {/* NEW 뱃지 */}
-        {product.dateAdded && 
-         new Date(product.dateAdded).getTime() > Date.now() - 7 * 24 * 60 * 60 * 1000 && (
-          <div className="absolute top-3 right-3">
-            <span className="bg-green-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-lg">
-              🆕 NEW
-            </span>
-          </div>
         )}
       </div>
 
-      <div className="p-5">
-        {/* 카테고리 */}
-        <div className="text-xs text-gray-500 mb-2 font-medium">
-          {product.category}
+      <div className="p-4">
+        {/* 카테고리 + 제품명 */}
+        <div className="mb-3">
+          <div className="text-xs text-gray-500 mb-1 font-medium">
+            {product.category}
+          </div>
+          <h3 className="text-base font-bold text-gray-900 line-clamp-2 leading-tight">
+            {product.productName}
+          </h3>
         </div>
 
-        {/* 제품명 */}
-        <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 leading-snug min-h-[3.2rem]">
-          {product.productName}
-        </h3>
-
-        {/* 설명 */}
-        <p className="text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed min-h-[2.8rem]">
-          {product.description}
-        </p>
-
-        {/* 하이라이트 */}
+        {/* 하이라이트 - 가장 눈에 띄게 */}
         {product.highlight && (
-          <div className="mb-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
-            <p className="text-sm font-semibold text-gray-800">
+          <div className="mb-3 bg-yellow-50 border-l-3 border-yellow-400 p-2.5 rounded">
+            <p className="text-sm font-bold text-gray-800">
               💡 {product.highlight}
             </p>
           </div>
         )}
 
-        {/* 주요 특징 */}
-        <div className="mb-4 space-y-1.5">
+        {/* 설명 - 짧게 */}
+        <p className="text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed">
+          {product.description}
+        </p>
+
+        {/* 주요 특징 - 간결하게 */}
+        <div className="mb-4 space-y-1">
           {product.features.slice(0, 3).map((feature, index) => (
-            <div key={index} className="flex items-start text-sm text-gray-700">
-              <span className="text-blue-500 mr-2 mt-0.5">✓</span>
-              <span className="flex-1">{feature}</span>
+            <div key={index} className="flex items-start text-xs text-gray-700">
+              <span className="text-blue-500 mr-1.5 mt-0.5">✓</span>
+              <span className="flex-1 leading-tight">{feature}</span>
             </div>
           ))}
         </div>
 
-        {/* 버튼 그룹 */}
-        <div className="space-y-2 pt-4 border-t">
-          {/* 메인 CTA - 쿠팡 구매 (가격은 쿠팡에서 확인) */}
+        {/* CTA 버튼 - 모바일 최적화 (크고 눈에 띄게!) */}
+        <div className="space-y-2">
+          {/* 메인 CTA - 쿠팡 (가장 중요!) */}
           <a
             href={product.coupangLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-bold shadow-md hover:shadow-lg text-base"
+            className="block w-full text-center px-4 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-bold shadow-md active:scale-98 text-base"
             aria-label={`${product.productName} 쿠팡에서 가격 확인하고 구매`}
           >
             💰 쿠팡 최저가 확인하기
           </a>
 
-          {/* 서브 CTA - 유튜브 쇼츠 */}
+          {/* 서브 CTA - 유튜브 */}
           {product.youtubeShorts && (
             <a
               href={product.youtubeShorts}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center px-6 py-3 bg-red-50 text-red-600 rounded-lg hover:bg-red-100 transition-colors font-semibold border border-red-200"
+              className="block w-full text-center px-4 py-3 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition-colors font-semibold border-2 border-red-200 active:scale-98 text-sm"
             >
-              ▶ 실사용 영상 보기
+              ▶ 실사용 영상 1분 보기
             </a>
           )}
         </div>
 
-        {/* 추가 정보 */}
-        <div className="mt-3 text-center text-xs text-gray-500">
-          쿠팡에서 실시간 가격과 리뷰를 확인하세요
+        {/* 추가 정보 - 간결하게 */}
+        <div className="mt-2.5 text-center text-xs text-gray-400">
+          쿠팡에서 실시간 가격 확인
         </div>
       </div>
     </article>
