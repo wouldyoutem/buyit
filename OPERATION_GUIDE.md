@@ -129,7 +129,7 @@ git push origin main
 
 #### 설명란 템플릿
 ```
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/wouldyoutem/
+🛒 최저가 구매 링크: https://wouldyoutem.github.io/buyit/
 
 📌 타임라인
 0:00 개봉
