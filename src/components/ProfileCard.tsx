@@ -1,3 +1,4 @@
+import React from 'react';
 import { Product } from '../types/profile';
 
 interface ProductCardProps {
@@ -11,7 +12,7 @@ function ProductCard({ product }: ProductCardProps) {
   };
 
   // 버튼 클릭 시 이벤트 전파 방지 (카드 클릭 이벤트가 실행되지 않도록)
-  const handleButtonClick = (e: React.MouseEvent, url: string) => {
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>, url: string) => {
     e.stopPropagation();
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -43,7 +44,7 @@ function ProductCard({ product }: ProductCardProps) {
         {/* 유튜브 쇼츠 버튼 - 모바일에서 항상 보이게 */}
         {product.youtubeShorts && (
           <button
-            onClick={(e) => handleButtonClick(e, product.youtubeShorts!)}
+            onClick={(e) => handleButtonClick(e, product.youtubeShorts)}
             className="absolute bottom-2 right-2 bg-red-600 text-white p-2.5 rounded-full shadow-lg hover:bg-red-700 transition-colors active:scale-95"
             aria-label={`${product.productName} 유튜브 쇼츠 보기`}
           >
