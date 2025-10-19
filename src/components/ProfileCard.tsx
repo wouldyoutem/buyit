@@ -43,6 +43,13 @@ function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <div className="p-4 flex flex-col flex-1">
+        {/* 쿠팡 파트너스 고지 - 상단에 명확히 표시 */}
+        <div className="mb-3 bg-orange-50 border border-orange-200 rounded-lg p-2.5">
+          <p className="text-xs text-orange-800 font-medium text-center leading-relaxed">
+            ⓘ 이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br className="sm:hidden" /> 이에 따른 일정액의 수수료를 제공받습니다
+          </p>
+        </div>
+
         {/* 카테고리 + 제품명 */}
         <div className="mb-3">
           <div className="text-xs text-gray-500 mb-1 font-medium">
@@ -101,11 +108,6 @@ function ProductCard({ product }: ProductCardProps) {
               ▶ 실사용 영상 1분 보기
             </a>
           )}
-        </div>
-
-        {/* 추가 정보 - 간결하게 */}
-        <div className="mt-2.5 text-center text-xs text-gray-400">
-          쿠팡에서 실시간 가격 확인
         </div>
       </div>
     </article>
