@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "3",
+      "productName": "조온하루 냉장고 정리 페이퍼백",
+      "category": "주방잡화",
+      "description": "냉장고 문 열 때마다 '어라?' 하셨나요? 이젠 크라프트 수납 페이퍼백 하나로 정리 끝! 내추럴한 크라프트 색감 + 아이템별 1 칸씩 담아 '한눈에 딱' 보기 좋고, 접이식으로 사용 안 할 때는 슥~ 접어 보관 가능해요. 냉장고 선반 위, 문 안쪽 틈새, 서랍까지 OK. 깔끔하게 정리하고 싶은 순간, 조온하루 페이퍼백, 한 번 써보세요!",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/a4d5/ec3051d97194eab72d26959064ceccd8e515f57cf17f40fe8f3ef402369c.png",
+      "coupangLink": "https://link.coupang.com/a/cXCdXq",
+      "youtubeShorts": "",
+      "features": [
+        "내추럴 크라프트 색감으로 냉장고 정리",
+        "접이식으로 사용하지 않을 때 간편 보관",
+        "선반, 문 안쪽, 서랍 등 다양한 공간 활용"
+      ],
+      "highlight": "접이식 크라프트 페이퍼백, 냉장고 한눈에 정리",
+      "dateAdded": "2025-10-19"
+    },
+    {
       "id": "2",
       "productName": "Windee 전동 손톱깎기",
       "category": "생활가전",
