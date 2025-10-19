@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "2",
+      "productName": "Windee 전동 손톱깎기",
+      "category": "생활가전",
+      "description": "바쁜 일상에 손톱 관리까지 자동으로! 2단 속도로 빠르게 모양 내고, 내장 LED 조명으로 어두운 곳에서도 OK, 부스러기 수납함까지 있어 깔끔하게 마무리! TYPE-C 충전으로 편리하게, 세련된 화이트 컬러로 욕실·책상 위 어디에도 잘 어울려요. 이제 손톱 깎는 게 귀찮으면? Windee 전동 손톱깎기, 한 번 써보세요!",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/6db0/0f4e1859cc9e048891f3288972f4bb0b26a9a7a97b44858e3432756b0619.jpg",
+      "coupangLink": "https://link.coupang.com/a/cXB6S5",
+      "youtubeShorts": "",
+      "features": [
+        "2단 속도 조절 + LED 조명 내장",
+        "부스러기 수납함으로 깔끔한 정리",
+        "TYPE-C 충전으로 편리한 사용"
+      ],
+      "highlight": "손톱 자동 관리, LED 조명 + 2단 속도",
+      "dateAdded": "2025-10-19"
+    },
+    {
       "id": "1",
       "productName": "가정용 군고구마기계",
       "category": "주방가전",
