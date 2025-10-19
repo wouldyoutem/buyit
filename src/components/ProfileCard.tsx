@@ -6,8 +6,8 @@ interface ProductCardProps {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200">
-      {/* 이미지 - 모바일에서 더 작게 */}
+    <article className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 h-full flex flex-col">
+      {/* 이미지 - 모바일에서 더 작게, 태블릿에서 정사각형 */}
       <div className="relative bg-gray-50 aspect-video sm:aspect-square">
         <img
           src={product.image}
@@ -42,7 +42,7 @@ function ProductCard({ product }: ProductCardProps) {
         )}
       </div>
 
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-1">
         {/* 카테고리 + 제품명 */}
         <div className="mb-3">
           <div className="text-xs text-gray-500 mb-1 font-medium">
@@ -68,7 +68,7 @@ function ProductCard({ product }: ProductCardProps) {
         </p>
 
         {/* 주요 특징 - 간결하게 */}
-        <div className="mb-4 space-y-1">
+        <div className="mb-4 space-y-1 flex-1">
           {product.features.slice(0, 3).map((feature, index) => (
             <div key={index} className="flex items-start text-xs text-gray-700">
               <span className="text-blue-500 mr-1.5 mt-0.5">✓</span>
@@ -78,7 +78,7 @@ function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* CTA 버튼 - 모바일 최적화 (크고 눈에 띄게!) */}
-        <div className="space-y-2">
+        <div className="space-y-2 mt-auto">
           {/* 메인 CTA - 쿠팡 (가장 중요!) */}
           <a
             href={product.coupangLink}
