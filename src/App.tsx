@@ -54,7 +54,7 @@ function App() {
       {/* 모바일 최적화 헤더 - 컴팩트 */}
       <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-3 py-2.5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center">
             <div className="flex items-center gap-2">
               <img 
                 src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
@@ -65,15 +65,6 @@ function App() {
                 <h1 className="text-base font-bold text-gray-900">우주꿀템</h1>
               </div>
             </div>
-            <a
-              href="https://www.youtube.com/@wouldyoutem"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold hover:bg-red-700 transition-colors active:scale-95"
-            >
-              <span className="text-base">▶</span>
-              <span>구독</span>
-            </a>
           </div>
         </div>
       </header>
@@ -90,25 +81,6 @@ function App() {
         </div>
       </div>
 
-      {/* 모바일 최적화 배너 - 콤팩트 */}
-      <section className="bg-gradient-to-r from-red-500 to-pink-500 text-white">
-        <div className="max-w-6xl mx-auto px-3 py-4">
-          <div className="text-center">
-            <p className="text-sm font-bold mb-2">
-              📹 소개 영상으로 먼저 확인하세요!
-            </p>
-            <a
-              href="https://www.youtube.com/@wouldyoutem"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-red-600 px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-100 transition-colors active:scale-95"
-            >
-              유튜브 보러가기 →
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* 메인 - 모바일 패딩 최소화 */}
       <main className="max-w-6xl mx-auto px-3 py-4">
         <div className="mb-4">
@@ -121,28 +93,6 @@ function App() {
         </div>
         
         {productData && <ProductList products={productData.products} />}
-        
-        {/* 하단 구독 유도 - 모바일 최적화 */}
-        <section className="mt-8 bg-white rounded-xl p-6 text-center border border-red-200">
-          <div className="mb-3">
-            <span className="text-5xl">📺</span>
-          </div>
-          <h3 className="text-lg font-bold mb-2 text-gray-900">
-            더 많은 꿀템이 궁금하다면?
-          </h3>
-          <p className="text-sm text-gray-600 mb-4">
-            매일 새로운 가성비 제품을<br className="sm:hidden" /> 유튜브 쇼츠로 소개합니다
-          </p>
-          <a
-            href="https://www.youtube.com/@wouldyoutem"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full text-base font-bold hover:bg-red-700 transition-colors shadow-lg active:scale-95 w-full sm:w-auto justify-center"
-          >
-            <span>▶</span>
-            <span>우주꿀템 구독하기</span>
-          </a>
-        </section>
       </main>
 
       {/* 푸터 - 모바일 컴팩트 */}
@@ -157,15 +107,6 @@ function App() {
               />
               <div className="font-bold text-sm">우주꿀템</div>
             </div>
-            <a
-              href="https://www.youtube.com/@wouldyoutem"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-red-600 px-4 py-2 rounded-full hover:bg-red-700 transition-colors text-sm active:scale-95"
-            >
-              <span>▶</span>
-              <span>YouTube</span>
-            </a>
           </div>
           <div className="text-center text-xs text-gray-400 space-y-1.5 pt-4 border-t border-gray-800">
             <p>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
