@@ -87,7 +87,7 @@ function ProductCard({ product }: ProductCardProps) {
             className="block w-full text-center px-4 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-bold shadow-md active:scale-98 text-base"
             aria-label={`${product.productName} 쿠팡에서 가격 확인하고 구매`}
           >
-            💰 쿠팡 최저가 확인하기
+            💰 쿠팡에서 확인하기
           </a>
 
           {/* 서브 CTA - 유튜브 */}
@@ -98,7 +98,7 @@ function ProductCard({ product }: ProductCardProps) {
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-3 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition-colors font-semibold border-2 border-red-200 active:scale-98 text-sm"
             >
-              ▶ 실사용 영상 1분 보기
+              ▶ 소개 영상 1분 보기
             </a>
           )}
         </div>
