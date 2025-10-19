@@ -20,7 +20,7 @@
 
 ### 📄 유튜브 설명란 템플릿
 \`\`\`
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/wouldyoutem/
+🛒 최저가 구매 링크: https://wouldyoutem.github.io/buyit/
 
 [제품 설명]
 
@@ -86,8 +86,6 @@ Claude가 상품 추가 시 확인해야 할 사항:
 ---
 
 ## 📹 유튜브 쇼츠 최적화 가이드
-
-이제 이 정보를 활용해서 유튜브 쇼츠를 제작하세요!
 
 ### 🎬 추천 제목 (바로 사용 가능)
 
@@ -170,7 +168,7 @@ Claude 응답:
 ### 📄 설명란 (복사해서 붙여넣으세요)
 
 ```
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/wouldyoutem/
+🛒 최저가 구매 링크: https://wouldyoutem.github.io/buyit/
 
 레이저로 먼지를 감지하는 똑똑한 청소기! 150분 장시간 사용 가능
 
