@@ -82,7 +82,7 @@ function ProductList({ products }: ProductListProps) {
               총 <span className="text-blue-600 text-base">{filteredProducts.length}</span>개
             </p>
             <p className="text-xs text-gray-500 hidden sm:block">
-              💡 지금 바로 최저가로!
+              💡 지금 바로 확인하세요!
             </p>
           </div>
           {/* 하이브리드 그리드: 모바일 1열, 태블릿+ 2열 */}
