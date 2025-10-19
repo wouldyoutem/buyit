@@ -90,10 +90,10 @@ function App() {
       <main className="max-w-6xl mx-auto px-3 py-4">
         <div className="mb-4">
           <h2 className="text-xl font-bold text-gray-900 mb-1">
-            🔥 최신 꿀템
+            🔥 2025 대박템 모음
           </h2>
           <p className="text-sm text-gray-600">
-            직접 추천하는 진짜 가성비
+            우주에서 찾은 꿀템
           </p>
         </div>
         
