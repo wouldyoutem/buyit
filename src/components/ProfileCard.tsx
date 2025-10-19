@@ -44,7 +44,7 @@ function ProductCard({ product }: ProductCardProps) {
         {/* 유튜브 쇼츠 버튼 - 모바일에서 항상 보이게 */}
         {product.youtubeShorts && (
           <button
-            onClick={(e) => handleButtonClick(e, product.youtubeShorts)}
+            onClick={(e) => handleButtonClick(e, product.youtubeShorts!)}
             className="absolute bottom-2 right-2 bg-red-600 text-white p-2.5 rounded-full shadow-lg hover:bg-red-700 transition-colors active:scale-95"
             aria-label={`${product.productName} 유튜브 쇼츠 보기`}
           >
@@ -107,7 +107,7 @@ function ProductCard({ product }: ProductCardProps) {
           {/* 서브 CTA - 유튜브 */}
           {product.youtubeShorts && (
             <button
-              onClick={(e) => handleButtonClick(e, product.youtubeShorts)}
+              onClick={(e) => handleButtonClick(e, product.youtubeShorts!)}
               className="block w-full text-center px-4 py-3 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition-colors font-semibold border-2 border-red-200 active:scale-98 text-sm"
             >
               ▶ 소개 영상 1분 보기
