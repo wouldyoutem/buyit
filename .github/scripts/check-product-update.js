@@ -1,5 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 색상 코드
 const colors = {
@@ -147,7 +151,7 @@ log('green', `  3. "가성비 최강 ${latestProduct.productName} 리뷰"\n`);
 // 설명란 템플릿
 log('yellow', '📄 유튜브 설명란 템플릿:\n');
 console.log(`
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/wouldyoutem/
+🛒 최저가 구매 링크: https://wouldyoutem.github.io/buyit/
 
 ${latestProduct.description}
 
