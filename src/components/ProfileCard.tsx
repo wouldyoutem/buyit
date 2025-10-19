@@ -5,8 +5,22 @@ interface ProductCardProps {
 }
 
 function ProductCard({ product }: ProductCardProps) {
+  // 카드 클릭 시 쿠팡 링크로 이동
+  const handleCardClick = () => {
+    window.open(product.coupangLink, '_blank', 'noopener,noreferrer');
+  };
+
+  // 버튼 클릭 시 이벤트 전파 방지 (카드 클릭 이벤트가 실행되지 않도록)
+  const handleButtonClick = (e: React.MouseEvent, url: string) => {
+    e.stopPropagation();
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <article className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 h-full flex flex-col">
+    <article 
+      onClick={handleCardClick}
+      className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 h-full flex flex-col cursor-pointer transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
+    >
       {/* 이미지 - 모바일에서 더 작게, 태블릿에서 정사각형 */}
       <div className="relative bg-gray-50 aspect-video sm:aspect-square">
         <img
@@ -28,17 +42,15 @@ function ProductCard({ product }: ProductCardProps) {
         
         {/* 유튜브 쇼츠 버튼 - 모바일에서 항상 보이게 */}
         {product.youtubeShorts && (
-          <a
-            href={product.youtubeShorts}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={(e) => handleButtonClick(e, product.youtubeShorts!)}
             className="absolute bottom-2 right-2 bg-red-600 text-white p-2.5 rounded-full shadow-lg hover:bg-red-700 transition-colors active:scale-95"
             aria-label={`${product.productName} 유튜브 쇼츠 보기`}
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z"/>
             </svg>
-          </a>
+          </button>
         )}
       </div>
 
@@ -80,26 +92,25 @@ function ProductCard({ product }: ProductCardProps) {
         {/* CTA 버튼 - 모바일 최적화 (크고 눈에 띄게!) */}
         <div className="space-y-2 mt-auto">
           {/* 메인 CTA - 쿠팡 (가장 중요!) */}
-          <a
-            href={product.coupangLink}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handleCardClick();
+            }}
             className="block w-full text-center px-4 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-bold shadow-md active:scale-98 text-base"
             aria-label={`${product.productName} 쿠팡에서 가격 확인하고 구매`}
           >
             💰 쿠팡에서 확인하기
-          </a>
+          </button>
 
           {/* 서브 CTA - 유튜브 */}
           {product.youtubeShorts && (
-            <a
-              href={product.youtubeShorts}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={(e) => handleButtonClick(e, product.youtubeShorts)}
               className="block w-full text-center px-4 py-3 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition-colors font-semibold border-2 border-red-200 active:scale-98 text-sm"
             >
               ▶ 소개 영상 1분 보기
-            </a>
+            </button>
           )}
         </div>
       </div>
