@@ -95,7 +95,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-3 py-4">
           <div className="text-center">
             <p className="text-sm font-bold mb-2">
-              📹 실사용 리뷰 영상으로 먼저 확인하세요!
+              📹 소개 영상으로 먼저 확인하세요!
             </p>
             <a
               href="https://www.youtube.com/@wouldyoutem"
@@ -116,7 +116,7 @@ function App() {
             🔥 최신 꿀템
           </h2>
           <p className="text-sm text-gray-600">
-            직접 써보고 추천하는 진짜 가성비 제품
+            직접 추천하는 진짜 가성비
           </p>
         </div>
         
