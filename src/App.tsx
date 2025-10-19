@@ -78,6 +78,18 @@ function App() {
         </div>
       </header>
 
+      {/* 쿠팡 파트너스 대가성 문구 - 페이지 최상단 명확 표시 */}
+      <div className="bg-orange-50 border-b border-orange-200">
+        <div className="max-w-6xl mx-auto px-3 py-3">
+          <div className="flex items-start gap-2">
+            <span className="text-orange-600 mt-0.5 flex-shrink-0">ⓘ</span>
+            <p className="text-xs sm:text-sm text-orange-800 font-medium leading-relaxed">
+              이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* 모바일 최적화 배너 - 콤팩트 */}
       <section className="bg-gradient-to-r from-red-500 to-pink-500 text-white">
         <div className="max-w-6xl mx-auto px-3 py-4">
@@ -155,8 +167,8 @@ function App() {
               <span>YouTube</span>
             </a>
           </div>
-          <div className="text-center text-xs text-gray-500 space-y-1.5 pt-4 border-t border-gray-800">
-            <p>쿠팡 파트너스 활동으로 일정 수수료를 받습니다</p>
+          <div className="text-center text-xs text-gray-400 space-y-1.5 pt-4 border-t border-gray-800">
+            <p>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
             <p>© 2025 우주꿀템</p>
           </div>
         </div>
