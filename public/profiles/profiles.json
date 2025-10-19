@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "5",
+      "productName": "인앤캠핑 캠핑 화로대 불멍 화로대 캠핑용 접이식 화로대",
+      "category": "캠핑/아웃도어",
+      "description": "밤하늘 아래, 장작이 살아 숨 쉬는 그 순간. 감성 캠핑의 정석, 불멍 타임이 시작됩니다. 힐링이 필요하다면, 이 한 대로 충분해요. 화롯불 아래 친구와, 사랑하는 사람과, 불멍 화로대, 지금 당장 펼쳐보세요!",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/929c/c5c355090861be58da9fcf3be156b3b642621ca3498ca6b38126a0409344.jpg",
+      "coupangLink": "https://link.coupang.com/a/cXEG6z",
+      "youtubeShorts": "",
+      "features": [
+        "접이식 구조로 휴대 및 보관 편리",
+        "감성 캠핑을 위한 불멍 화로대",
+        "친구, 가족과 함께하는 힐링 타임"
+      ],
+      "highlight": "불멍으로 힐링, 접이식 감성 캠핑 화로대",
+      "dateAdded": "2025-10-19"
+    },
+    {
       "id": "4",
       "productName": "가정용 팝콘 기계",
       "category": "주방가전",
