@@ -55,7 +55,12 @@ function App() {
       <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-3 py-2.5">
           <div className="flex items-center justify-center">
-            <div className="flex items-center gap-2">
+            <a
+              href="https://www.youtube.com/@wouldyoutem"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
               <img 
                 src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
                 alt="우주꿀템"
@@ -64,7 +69,7 @@ function App() {
               <div>
                 <h1 className="text-base font-bold text-gray-900">우주꿀템</h1>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </header>
@@ -99,14 +104,19 @@ function App() {
       <footer className="bg-gray-900 text-white mt-12">
         <div className="max-w-6xl mx-auto px-3 py-6">
           <div className="flex flex-col items-center gap-3 mb-4">
-            <div className="flex items-center gap-2">
+            <a
+              href="https://www.youtube.com/@wouldyoutem"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
               <img 
                 src="https://github.com/user-attachments/assets/20f2b4e1-07a3-4f83-9b1a-6b48d5f2298f" 
                 alt="우주꿀템"
                 className="h-6 w-6 rounded-full"
               />
               <div className="font-bold text-sm">우주꿀템</div>
-            </div>
+            </a>
           </div>
           <div className="text-center text-xs text-gray-400 space-y-1.5 pt-4 border-t border-gray-800">
             <p>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
