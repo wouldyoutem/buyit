@@ -151,7 +151,7 @@ log('green', `  3. "가성비 최강 ${latestProduct.productName} 리뷰"\n`);
 // 설명란 템플릿
 log('yellow', '📄 유튜브 설명란 템플릿:\n');
 console.log(`
-🛒 최저가 구매 링크: https://wouldyoutem.github.io/buyit/
+🛒 구매 링크: https://wouldyoutem.github.io/buyit/
 
 ${latestProduct.description}
 
@@ -181,7 +181,6 @@ const hashtags = [
   '#쿠팡추천',
   `#${latestProduct.category.replace('/', '')}`,
   ...productKeywords.map(k => `#${k}`),
-  '#최저가',
   '#할인'
 ];
 log('cyan', `  ${hashtags.join(' ')}\n`);
