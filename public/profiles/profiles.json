@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "6",
+      "productName": "레고 테크닉 42177 Mercedes Benz G 500",
+      "category": "완구/취미",
+      "description": "이제 블록 하나로 꿈의 오프로더를 완성하세요! 2,891피스 대작 – 실물 같은 스티어링, 리얼 피스톤 엔진, 4×4 디퍼런셜 락까지 탑재! 미니카가 아니라 '작동하는 머신'입니다. 완성 후엔 거실 한켠에 '전시 차'로도 찰떡! 지금, 당신만의 G-클래스가 탄생합니다.",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/cb28/0e1770f37d764ad3ace9319fd9430ce6d33a4b314a7395d6de862ca8bdb5.jpg",
+      "coupangLink": "https://link.coupang.com/a/cX8fAw",
+      "youtubeShorts": "",
+      "features": [
+        "2,891피스 대작으로 실물 같은 디테일",
+        "작동하는 스티어링, 리얼 피스톤 엔진, 4×4 디퍼런셜 락",
+        "완성 후 전시용으로도 완벽"
+      ],
+      "highlight": "2,891피스 G-클래스, 작동하는 머신",
+      "dateAdded": "2025-10-19"
+    },
+    {
       "id": "5",
       "productName": "인앤캠핑 캠핑 화로대 불멍 화로대 캠핑용 접이식 화로대",
       "category": "캠핑/아웃도어",
