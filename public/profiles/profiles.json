@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "7",
+      "productName": "휴대용 무선 에어펌프 튜브 캠핑 매트 공기주입기",
+      "category": "캠핑/아웃도어",
+      "description": "차 안에 휴대폰처럼 하나 두세요. 갑작스런 타이어 공기압 부족? 버튼 한 번으로 '볼륨 업'처럼 빠르게 충전! 자전거도, 오토바이도, 자동차도 OK – 무선 에어펌프, 언제든 준비완료!",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/e699/d46879c3f45050468bd699ad6a98ab0079f5a6ef6a042a7d2ca11d8a6176.jpg",
+      "coupangLink": "https://link.coupang.com/a/cYoBLX",
+      "youtubeShorts": "",
+      "features": [
+        "무선 충전식으로 언제 어디서나 사용 가능",
+        "자동차, 자전거, 오토바이, 캠핑 매트까지 다용도",
+        "버튼 한 번으로 빠른 공기 주입"
+      ],
+      "highlight": "차 안 필수템, 무선으로 타이어 공기 즉시 충전",
+      "dateAdded": "2025-10-22"
+    },
+    {
       "id": "6",
       "productName": "레고 테크닉 42177 Mercedes Benz G 500",
       "category": "완구/취미",
