@@ -16,8 +16,16 @@ function App() {
         return response.json();
       })
       .then(data => {
-        // 최신순 정렬
+        // 유튜브 쇼츠 링크가 있는 것 우선 → 최신순 정렬
         const sortedProducts = data.products.sort((a: any, b: any) => {
+          const aHasShorts = a.youtubeShorts && a.youtubeShorts.trim() !== '';
+          const bHasShorts = b.youtubeShorts && b.youtubeShorts.trim() !== '';
+          
+          // 유튜브 쇼츠 유무로 우선 정렬
+          if (aHasShorts && !bHasShorts) return -1;
+          if (!aHasShorts && bHasShorts) return 1;
+          
+          // 둘 다 있거나 둘 다 없으면 최신순 정렬
           return new Date(b.dateAdded || 0).getTime() - new Date(a.dateAdded || 0).getTime();
         });
         setProductData({ products: sortedProducts });
