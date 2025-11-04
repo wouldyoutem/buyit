@@ -85,8 +85,8 @@ function ProductList({ products }: ProductListProps) {
               💡 지금 바로 확인하세요!
             </p>
           </div>
-          {/* 하이브리드 그리드: 모바일 1열, 태블릿+ 2열 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* 모바일 2열, 태블릿 3열, 데스크톱 3열 그리드 */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {filteredProducts.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
