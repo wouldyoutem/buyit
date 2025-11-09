@@ -104,6 +104,16 @@ function ProductCard({ product }: ProductCardProps) {
             💰 쿠팡 최저가
           </button>
 
+          {/* 네이버 쇼핑 버튼 */}
+          {product.naverLink && (
+            <button
+              onClick={(e) => handleButtonClick(e, product.naverLink!)}
+              className="block w-full text-center px-3 py-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 transition-colors font-semibold border border-green-200 active:scale-98 text-xs"
+            >
+              🛍️ 네이버쇼핑
+            </button>
+          )}
+
           {/* 서브 CTA - 유튜브 */}
           {product.youtubeShorts && (
             <button
