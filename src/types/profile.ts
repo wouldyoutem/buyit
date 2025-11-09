@@ -6,6 +6,7 @@ export interface Product {
   image: string;
   coupangLink: string;
   youtubeShorts?: string;
+  naverLink?: string;
   features: string[];
   highlight?: string;
   dateAdded?: string;
