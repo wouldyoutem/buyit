@@ -6,9 +6,10 @@ interface ProductCardProps {
 }
 
 function ProductCard({ product }: ProductCardProps) {
-  // 카드 클릭 시 쿠팡 링크로 이동
+  // 카드 클릭 시 네이버쇼핑 링크가 있으면 네이버로, 없으면 쿠팡으로 이동
   const handleCardClick = () => {
-    window.open(product.coupangLink, '_blank', 'noopener,noreferrer');
+    const link = product.naverLink || product.coupangLink;
+    window.open(link, '_blank', 'noopener,noreferrer');
   };
 
   // 버튼 클릭 시 이벤트 전파 방지 (카드 클릭 이벤트가 실행되지 않도록)
@@ -92,25 +93,38 @@ function ProductCard({ product }: ProductCardProps) {
 
         {/* CTA 버튼 - 모바일 2열 최적화 */}
         <div className="space-y-2 mt-auto">
-          {/* 메인 CTA - 쿠팡 (가장 중요!) */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              handleCardClick();
-            }}
-            className="block w-full text-center px-3 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-bold shadow-md active:scale-98 text-sm"
-            aria-label={`${product.productName} 쿠팡에서 가격 확인하고 구매`}
-          >
-            💰 쿠팡 최저가
-          </button>
+          {/* 메인 CTA - 네이버쇼핑 우선, 없으면 쿠팡 */}
+          {product.naverLink ? (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleButtonClick(e, product.naverLink!);
+              }}
+              className="block w-full text-center px-3 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-bold shadow-md active:scale-98 text-sm"
+              aria-label={`${product.productName} 네이버쇼핑에서 가격 확인하고 구매`}
+            >
+              🛍️ 네이버 최저가
+            </button>
+          ) : (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleButtonClick(e, product.coupangLink);
+              }}
+              className="block w-full text-center px-3 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-bold shadow-md active:scale-98 text-sm"
+              aria-label={`${product.productName} 쿠팡에서 가격 확인하고 구매`}
+            >
+              💰 쿠팡 최저가
+            </button>
+          )}
 
-          {/* 네이버 쇼핑 버튼 */}
+          {/* 서브 CTA - 쿠팡 (네이버 링크가 있을 때만) */}
           {product.naverLink && (
             <button
-              onClick={(e) => handleButtonClick(e, product.naverLink!)}
-              className="block w-full text-center px-3 py-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 transition-colors font-semibold border border-green-200 active:scale-98 text-xs"
+              onClick={(e) => handleButtonClick(e, product.coupangLink)}
+              className="block w-full text-center px-3 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors font-semibold border border-blue-200 active:scale-98 text-xs"
             >
-              🛍️ 네이버쇼핑
+              💰 쿠팡도 확인
             </button>
           )}
 
