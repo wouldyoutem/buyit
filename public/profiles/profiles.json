@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "10",
+      "productName": "다용도 사각냄비 + 유리뚜껑 + 튀김망 세트",
+      "category": "주방가전",
+      "description": "요리도 보관도 한 번에! 작고 귀여운 1.45L 사이즈로, 인덕션·가스 모두 OK ✅ 유리뚜껑으로 조리 상태도 확인 가능하고, 튀김망까지 포함되어 '튀기기 → 보관'까지 쓱! 이 냄비 하나면 '예쁜 주방 완성'됩니다!",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/fef6/3d1fe6767fa67006b08fd9a8d7d0fe34cba7d5b7d9cf66431f08f31d0b8b.jpg",
+      "coupangLink": "https://link.coupang.com/a/c2OanU",
+      "youtubeShorts": "",
+      "features": [
+        "1.45L 컴팩트 사이즈로 인덕션·가스 겸용",
+        "유리뚜껑으로 조리 과정 한눈에 확인",
+        "튀김망 포함으로 튀김 요리 및 보관까지 가능"
+      ],
+      "highlight": "1.45L 다용도 냄비, 요리부터 보관까지 한 번에",
+      "dateAdded": "2025-11-09"
+    },
+    {
       "id": "9",
       "productName": "캠핑용 휴대용 에어매트 에어블럭",
       "category": "캠핑/아웃도어",
