@@ -1,6 +1,22 @@
 {
   "products": [
     {
+      "id": "9",
+      "productName": "캠핑용 휴대용 에어매트 에어블럭",
+      "category": "캠핑/아웃도어",
+      "description": "캠핑 좀 다녀본 사람들은 알죠. 진짜 꿀잠 자야 다음 날 컨디션이 살아납니다. 이 에어매트, 펼치면 자동으로 공기 차고 폭신함이 미쳤어요. 바닥 느낌 전혀 없고, 접을 때도 금방 정리 끝. 혼캠, 커플캠, 차박 어디서든 완벽하게 편해요.",
+      "image": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/516565043936768-9b42dd2f-d0d1-4225-98e2-f149d8d903de.png",
+      "coupangLink": "https://link.coupang.com/a/c2NWlN",
+      "youtubeShorts": "https://www.youtube.com/shorts/NDKCEZpLXiM",
+      "features": [
+        "펼치면 자동으로 공기 주입 (자동 팽창)",
+        "폭신한 두께감으로 바닥 느낌 없이 꿀잠",
+        "빠른 수납과 정리로 편리한 사용"
+      ],
+      "highlight": "자동 팽창 에어매트, 바닥 느낌 없이 꿀잠 보장",
+      "dateAdded": "2025-11-04"
+    },
+    {
       "id": "8",
       "productName": "쏘맥타워 제조기",
       "category": "주방가전",
